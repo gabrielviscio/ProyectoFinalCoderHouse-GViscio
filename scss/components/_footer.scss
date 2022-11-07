@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 1rem;
+  background-color: #fafafa;
+  bottom: 0 !important;
+
+  .icon {
+    height: 25px;
+    width: 25px;
+    margin: 10px 30px;
+  }
+}

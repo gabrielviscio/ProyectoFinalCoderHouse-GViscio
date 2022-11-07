@@ -1,0 +1,134 @@
+@media (min-width: 720px) {
+  body {
+    padding-top: 12em;
+  }
+
+  header {
+    position: absolute;
+    width: 100vw !important;
+
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    .logo {
+      font-size: 4em;
+      margin: auto;
+    }
+
+    nav {
+      width: auto;
+      flex-direction: row !important;
+    }
+  }
+  .somos {
+    margin: 5%;
+    display: flex;
+    p {
+      width: 60%;
+      max-width: 600px;
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+    }
+  }
+
+  .imgCubos {
+    background-image: url("../assets/img/fondos/cubos.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 300px;
+    border-radius: 100px 0 0 100px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 600px;
+  }
+
+  footer {
+    img:hover {
+      transition: 0.3s;
+      transform: scale(1.3);
+    }
+  }
+
+  /*contacto*/
+  .contactos-form {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+  }
+
+  /*clientes */
+  .sectionProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    justify-items: center;
+    h2 {
+      grid-column-start: span 2;
+    }
+  }
+  .blog {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .carrusel {
+    padding: 0;
+    margin-bottom: 55px;
+    img {
+      border-radius: 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding-top: 6em;
+  }
+
+  header {
+    position: fixed;
+    nav {
+      flex-direction: row;
+    }
+    .logo {
+      margin: 0;
+      font-family: "Cherry Cream Soda";
+      font-size: 3.5em;
+      padding-left: 50px;
+    }
+  }
+
+  .imgCubos {
+    height: 400px;
+    width: 600px;
+  }
+
+  iframe {
+    width: 75%;
+    height: 600px;
+  }
+
+  .btn {
+    bottom: -100rem;
+  }
+
+  /*clientes */
+  .sectionProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+    h2 {
+      grid-column-start: span 3;
+    }
+  }
+
+  .blog {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
